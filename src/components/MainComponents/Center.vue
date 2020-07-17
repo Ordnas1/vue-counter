@@ -1,7 +1,7 @@
 <template>
     <div class="main-center">
         <h1>Asesoría</h1>
-        <p>{{ currentCount }}</p>
+        <p class="counter">{{ currentCount }}</p>
         <div class="btn-container">
             <button @click="decrement">-</button>
             <button @click="increment">+</button>
@@ -27,6 +27,7 @@ export default {
 </script>
 <style scoped lang="scss" >
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 h1 {
     text-align: center;
@@ -41,8 +42,10 @@ h1 {
     flex-direction: column;
     
 }
-p {
+.counter {
     text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 10rem;
 }
 
 .btn-container {
